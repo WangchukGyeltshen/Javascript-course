@@ -5,30 +5,58 @@
   </head>
   <body>
     <p>Cart Quantity</p>
-    <button onclick="
+    <p>
+      <button onclick="
+          console.log(`Cart Quantity: ${cartQuantity}`);
+      ">Show Quantity</button>
+      <button onclick="
+        cartQuantity ++; // shorthand for cartQuantity = cartQuantity + 1
         console.log(`Cart Quantity: ${cartQuantity}`);
-    ">Show Quantity</button>
-    <button onclick="
-      cartQuantity ++; // shorthand for cartQuantity = cartQuantity + 1
-      console.log(`Cart Quantity: ${cartQuantity}`);
-    ">Add to Cart</button>
+      ">Add to Cart</button>
 
-    <button onclick="
-      cartQuantity += 2; // shorthand for cartQuantity = cartQuantity + 2
-      console.log(`Cart Quantity: ${cartQuantity}`)
-    ">+2</button>
+      <button onclick="
+        cartQuantity += 2; // shorthand for cartQuantity = cartQuantity + 2
+        console.log(`Cart Quantity: ${cartQuantity}`)
+      ">+2</button>
 
-    <button onclick="
-      cartQuantity = cartQuantity + 3;
-      console.log(`Cart Quantity: ${cartQuantity}`)
-    ">+3</button>
+      <button onclick="
+        cartQuantity = cartQuantity + 3;
+        console.log(`Cart Quantity: ${cartQuantity}`)
+      ">+3</button>
 
-    <button onclick="
-      cartQuantity = 0;
-      console.log('Card was Reset');
-      console.log(`Cart Quantity: ${cartQuantity}`);
-    ">Reset Cart</button>
+      <button onclick="
+        cartQuantity = 0;
+        console.log('Card was Reset');
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      ">Reset Cart</button>
+    </p>
 
+    <p>
+      <button onclick="
+        cartQuantity += 4;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      ">+4</button>
+
+      <button onclick="
+        cartQuantity += 5;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      ">+5</button>
+
+      <button onclick="
+        cartQuantity --;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      ">Remove from Cart</button>
+
+       <button onclick="
+        cartQuantity -= 2;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      ">-2</button>
+
+      <button onclick="
+        cartQuantity -= 3;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      ">-3</button>
+    </p>
     <script>
       let cartQuantity = 0; // This method of naming is called camel case, where the first letter is lowercase and each subsequent word starts with an    uppercase letter.
     </script>
