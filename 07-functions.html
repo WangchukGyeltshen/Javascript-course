@@ -5,12 +5,25 @@
   </head>
   <body>
     <script>
+      /*
       function function1() {
         console.log('Hello');
         console.log(2 + 2);
       }
 
       function1 ();
-    </script>
+      */
+
+      // RETURN gets a value out of a function
+      // PARAMETER puts a value into a function
+
+      function calculateTax(cost, taxPercent = 0.1) { // this function takes a parameter
+        console.log(cost * taxPercent);
+      }
+
+      calculateTax(2000, 0.2);
+      calculateTax(5000); // passing a value into the function (argument)
+
+    </script>s
   </body>
 </html>
